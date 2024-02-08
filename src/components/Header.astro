@@ -1,0 +1,44 @@
+---
+import { customProperties } from "../utils/custom-properties";
+import Logo from "./Logo.astro";
+
+const { headerBackgroundColor, headerForegroundColor } = customProperties;
+---
+
+<header class="page-header">
+  <nav aria-label="Main Navigation">
+    <ul class="reset-list primary-navigation base-container-padding">
+      <li><a href="/">Home</a></li>
+      <li><a href="/episodes">Episodes</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<Logo />
+
+<style define:vars={{ headerBackgroundColor, headerForegroundColor }}>
+  .page-header {
+    background-color: var(--headerBackgroundColor);
+    color: var(--headerForegroundColor);
+  }
+
+  .page-header a:link,
+  .page-header a:visited {
+    color: var(--headerForegroundColor);
+    text-decoration: none;
+  }
+
+  .primary-navigation {
+    display: flex;
+    font-size: var(--typography-size-small-medium);
+    gap: var(--spacing-default);
+  }
+
+  @media only screen and (min-width: 43.9375rem) {
+    .primary-navigation {
+      gap: var(--spacing-medium);
+    }
+  }
+</style>

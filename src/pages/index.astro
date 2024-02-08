@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import EpisodeSummary from "../components/EpisodeSummary.astro";
+import Subscribe from "../components/Subscribe.astro";
+import AboutElevatorPitch from "../components/AboutElevatorPitch.astro";
+
+const metaDescription = "A Website Toolkit For Indie Podcasters";
+const metaTitle = "A Website Toolkit For Indie Podcasters";
+---
+
+<BaseLayout metaDescription={metaDescription} metaPageTitle={metaTitle}>
+  <main>
+    <EpisodeSummary />
+    <Subscribe />
+    <AboutElevatorPitch />
+  </main>
+</BaseLayout>
