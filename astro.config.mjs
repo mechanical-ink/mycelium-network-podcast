@@ -18,6 +18,7 @@ export default defineConfig({
       // <<-- START :: Your elevator pitch
       elevatorPitch:
         "The Mycelium Network podcast. A podcast about early-stage web developers and the mentors, teachers, and communities who help them along the way.",
+      // <<-- END :: Your elevator pitch
       // <<-- START :: Featured episode configuration
       featuredEpisodeGuestName: "Aashni Shah",
       featuredEpisodeGuestProfilePicture: "aashni-shah",
