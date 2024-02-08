@@ -79,7 +79,7 @@ export default defineConfig({
         {
           icon: "default-linkedin",
           name: "LinkedIn",
-          url: "https://www.linkedin.com/company/mechanical-ink/?viewAsMember=true",
+          url: "https://www.linkedin.com/company/mechanical-ink/",
         },
         {
           icon: "default-mastodon",
