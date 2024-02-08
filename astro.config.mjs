@@ -15,8 +15,11 @@ export default defineConfig({
       colorSecondaryColor: "#dab97e",
       colorSecondaryColorDark: "#38290d",
       colorSecondaryColorLight: "#fff1d7",
+      // <<-- START :: Your elevator pitch
       elevatorPitch:
         "The Mycelium Network podcast. A podcast about early-stage web developers and the mentors, teachers, and communities who help them along the way.",
+      // <<-- END :: Your elevator pitch
+      // <<-- START :: Featured episode configuration
       featuredEpisodeGuestName: "Chad Stewart",
       featuredEpisodeGuestProfilePicture: "chad-stewart",
       featuredEpisodeTitle:
@@ -27,11 +30,12 @@ export default defineConfig({
         "the-mechanical-ink-podcast-with-jennifer-riggins-episode-001",
       featuredEpisodeURL:
         "techishiring-com-people-first-open-source-as-career-growth-a-i-nuance",
+      // <<-- END :: Featured episode configuration
       headerBackgroundColor: "#1c1c44",
       headerForegroundColor: "#fff",
       hostName: "Schalk Neethling",
       hostProfilePicture: "schalk-neethling",
-      logo: "/logo.svg",
+      logo: "logo.svg",
       logoHeight: "275",
       logoWidth: "500",
       podcastName: "The Mycelium Network Podcast",
@@ -39,74 +43,74 @@ export default defineConfig({
         {
           icon: "default-amazon",
           name: "Amazon Music",
-          url: "https://music.amazon.com/podcasts/...",
+          url: "https://music.amazon.com/podcasts/",
         },
         {
           icon: "default-apple",
           name: "Apple Podcasts",
-          url: "https://podcasts.apple.com/...",
+          url: "https://podcasts.apple.com/us/podcast/",
         },
         {
           icon: "default-overcast",
           name: "Overcast",
-          url: "https://overcast.fm/...",
+          url: "https://overcast.fm/",
         },
         {
           icon: "default-spotify",
           name: "Spotify",
-          url: "https://open.spotify.com/show/...",
+          url: "https://open.spotify.com/show/",
         },
         {
           icon: "default-youtube",
           name: "YouTube",
-          url: "https://www.youtube.com/...",
+          url: "https://www.youtube.com/",
         },
         {
           icon: "default-rss",
           name: "RSS",
-          url: "https://feeds.buzzsprout.com/...",
+          url: "https://feeds.buzzsprout.com/",
         },
       ],
       socialMedia: [
         {
           icon: "default-discord",
           name: "Discord",
-          url: "https://www.discord.com/...",
+          url: "https://www.discord.com/",
         },
         {
           icon: "default-facebook",
           name: "Facebook",
-          url: "https://www.facebook.com/...",
+          url: "https://www.facebook.com/",
         },
         {
           icon: "default-github",
           name: "GitHub",
-          url: "https://github.com/...",
+          url: "https://github.com/",
         },
         {
           icon: "default-instagram",
           name: "Instagram",
-          url: "https://www.instagram.com/...",
+          url: "https://www.instagram.com/",
         },
         {
           icon: "default-linkedin",
           name: "LinkedIn",
-          url: "https://www.linkedin.com/...",
+          url: "https://www.linkedin.com/",
         },
         {
           icon: "default-mastodon",
           name: "Mastodon",
-          url: "https://www.hacyderm.com/...",
+          url: "https://www.hacyderm.com/",
         },
         {
           icon: "default-slack",
           name: "Slack",
-          url: "https://www.slack.com/...",
+          url: "https://www.slack.com/",
         },
         {
           icon: "default-x",
           name: "Twitter/X",
-          url: "https://twitter.com/...",
+          url: "https://twitter.com/",
         },
       ],
     }),

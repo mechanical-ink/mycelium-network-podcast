@@ -1,15 +1,15 @@
 ---
 const { episode } = Astro.props;
 const backgroundImg = episode.artwork
-  ? `url(/episode-artwork/${episode.artwork}.webp)`
-  : "url(/episode-artwork/episode-default.webp)";
+  ? `url(episode-artwork/${episode.artwork}.webp)`
+  : "url(episode-artwork/episode-default.webp)";
 ---
 
 <div class="podcast-player-default-container">
   <audio controls preload="metadata">
-    <source src={`/episodes/${episode.url}.mp3`} type="audio/mpeg" />
+    <source src={`episodes/${episode.url}.mp3`} type="audio/mpeg" />
     Your browser does not support the audio element. Please <a
-      href={`/episodes/${episode.url}.mp3`}
+      href={`episodes/${episode.url}.mp3`}
       download>download the episode</a
     > instead.
   </audio>
