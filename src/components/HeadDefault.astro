@@ -7,14 +7,14 @@ import "../styles/base.css";
 interface Props {
   metaDescription: string;
   metaPageTitle: string;
-  siteTitle: string;
+  podcastName: string;
 }
 
-const { metaDescription, metaPageTitle, siteTitle } = Astro.props;
+const { metaDescription, metaPageTitle, podcastName } = Astro.props;
 ---
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="generator" content={Astro.generator} />
-<title>{metaPageTitle} - {siteTitle}</title>
+<title>{metaPageTitle} - {podcastName}</title>
 <meta name="description" content={metaDescription} />
