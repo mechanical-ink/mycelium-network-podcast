@@ -5,6 +5,7 @@ export const indieCasterConfig = {
   colorSecondaryColor: "#dab97e",
   colorSecondaryColorDark: "#38290d",
   colorSecondaryColorLight: "#fff1d7",
+  domain: "mycelium-network.mechanical.ink",
   // <<-- START :: Your elevator pitch
   elevatorPitch:
     "The Mycelium Network podcast. A podcast about early-stage web developers and the mentors, teachers, and communities who help them along the way.",
@@ -28,6 +29,10 @@ export const indieCasterConfig = {
   logo: "logo.svg",
   logoHeight: "275",
   logoWidth: "500",
+  metaDefaultDescription:
+    "The Mycelium Network podcast. A podcast about early-stage web developers and the mentors, teachers, and communities who help them along the way.",
+  metaLanguage: "en",
+  metaLocale: "en_US",
   podcastName: "The Mycelium Network Podcast",
   podcastPlayers: [
     {
