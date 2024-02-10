@@ -16,7 +16,7 @@ interface Props {
 
 const { metaDescription, metaPageTitle } = Astro.props;
 const showAnnounceBar = import.meta.env.ANNOUNCEBAR_ENABLED === "true";
-const { metaLanguage, siteTitle } = Config.options;
+const { metaLanguage, podcastName } = Config.options;
 ---
 
 <!doctype html>
@@ -25,7 +25,7 @@ const { metaLanguage, siteTitle } = Config.options;
     <HeadDefault
       metaDescription={metaDescription}
       metaPageTitle={metaPageTitle}
-      siteTitle={siteTitle}
+      podcastName={podcastName}
     />
     <OpenGraph />
     <MetaIcons />
