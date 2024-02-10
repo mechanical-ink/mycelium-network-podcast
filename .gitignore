@@ -21,4 +21,20 @@ pnpm-debug.log*
 .DS_Store
 
 # IndieCaster
+public/episode-artwork/
+public/profile-images/
+public/android-chrome-192x192.png
+public/android-chrome-512x512.png
+public/apple-touch-icon.png
+public/browserconfig.xml
+public/favicon-16x16.png
+public/favicon-32x32.png
+public/favicon.ico
+public/favicon.svg
+public/logo.svg
+public/mstile-150x150.png
+public/safari-pinned-tab.svg
+public/site.webmanifest
+public/social-share.png
+public/social-share@2x.png
 indiecaster.config.js
