@@ -4,7 +4,6 @@ export default defineIntegration({
   name: "indiecaster",
   defaults: {
     logo: "./assets/logo.png",
-    siteTitle: "IndieCaster",
   },
   setup(options) {
     // These are the options passed in when you use your integration
