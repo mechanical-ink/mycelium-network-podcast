@@ -2,11 +2,12 @@
 import Config from "virtual:indiecaster/config";
 
 import AnnounceBar from "../components/AnnounceBar.astro";
+import DefaultCustomPlayer from "../components/DefaultCustomPlayer.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import HeadDefault from "../components/HeadDefault.astro";
 import MetaIcons from "../components/MetaIcons.astro";
-import DefaultCustomPlayer from "../components/DefaultCustomPlayer.astro";
+import OpenGraph from "../components/OpenGraph.astro";
 
 interface Props {
   metaDescription: string;
@@ -15,17 +16,18 @@ interface Props {
 
 const { metaDescription, metaPageTitle } = Astro.props;
 const showAnnounceBar = import.meta.env.ANNOUNCEBAR_ENABLED === "true";
-const { siteTitle } = Config.options;
+const { metaLanguage, siteTitle } = Config.options;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={metaLanguage}>
   <head>
     <HeadDefault
       metaDescription={metaDescription}
       metaPageTitle={metaPageTitle}
       siteTitle={siteTitle}
     />
+    <OpenGraph />
     <MetaIcons />
   </head>
   <body>
