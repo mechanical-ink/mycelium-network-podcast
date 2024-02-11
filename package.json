@@ -13,6 +13,8 @@
     "astro": "^4.2.5"
   },
   "devDependencies": {
-    "astro-integration-kit": "^0.0.9"
+    "astro-integration-kit": "^0.0.9",
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.3"
   }
 }
