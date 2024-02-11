@@ -11,16 +11,14 @@ export const indieCasterConfig = {
     "The Mycelium Network podcast. A podcast about early-stage web developers and the mentors, teachers, and communities who help them along the way.",
   // <<-- END :: Your elevator pitch
   // <<-- START :: Featured episode configuration
-  featuredEpisodeGuestName: "Aashni Shah",
-  featuredEpisodeGuestProfilePicture: "aashni-shah",
+  featuredEpisodeGuestName: "Temitope Asama",
+  featuredEpisodeGuestProfilePicture: "temitope-asama",
   featuredEpisodeTitle:
-    "Technology as a Force for Good: Empowering, Innovating, and Inspiring - Aashni Shah",
+    "CHAOSS, Community, And Breaking Barriers - Temitope Asama",
   featuredEpisodeSummary:
-    "Schalk Neethling, the host of the Mycelium Network podcast, engaged in an inspiring conversation with guest Aashni Shah. Aashni, with her roots in Kenya, has carved a remarkable path in the tech world, starting from her educational journey in Canada to her roles in companies like Microsoft and Square, and her dive into entrepreneurship. A significant part of the discussion revolved around HypeDocs, Aashni's innovative platform designed to enable individuals and employees in companies to document and celebrate their professional achievements. This platform, pivoted to a B2B model, addresses the crucial need for self-promotion and recognition in the workplace, particularly highlighting the challenges faced by underrepresented groups in the tech industry.",
-  featuredEpisodeTrack:
-    "technology-as-a-force-for-good-empowering-innovating-and-inspiring-aashni-shah",
-  featuredEpisodeURL:
-    "technology-as-a-force-for-good-empowering-innovating-and-inspiring-aashni-shah",
+    "In this episode of the Mycelium Network podcast we explore Temitope Asama's journey into tech, highlighting her initial interests and challenges. Her active involvement in the CHAOSS community underscores the importance of supportive networks in fostering growth. Additionally, Temitope's advocacy for diversity, equity, and inclusion (DEI) within the tech space is a critical theme, reflecting her commitment to creating a more inclusive and equitable industry. This narrative emphasizes the power of community and the significance of DEI efforts in shaping the tech landscape.",
+  featuredEpisodeTrack: "temitope-asama-chaoss-community-and-breaking-barriers",
+  featuredEpisodeURL: "temitope-asama-chaoss-community-and-breaking-barriers",
   // <<-- END :: Featured episode configuration
   headerBackgroundColor: "#1c1c44",
   headerForegroundColor: "#fff",
