@@ -1,19 +1,27 @@
 ---
+import Config from "virtual:indiecaster/config";
+
 import { customProperties } from "../utils/custom-properties";
 import Logo from "./Logo.astro";
 
 const { headerBackgroundColor, headerForegroundColor } = customProperties;
+const { mainNavigation } = Config.options;
 ---
 
 <header class="page-header">
-  <nav aria-label="Main Navigation">
-    <ul class="reset-list primary-navigation base-container-padding">
-      <li><a href="/">Home</a></li>
-      <li><a href="/episodes">Episodes</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-  </nav>
+  {
+    mainNavigation?.length > 0 && (
+      <nav aria-label="Main Navigation">
+        <ul class="reset-list primary-navigation base-container-padding">
+          {mainNavigation.map((item) => (
+            <li>
+              <a href={item.url}>{item.name}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )
+  }
 </header>
 
 <Logo />
