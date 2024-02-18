@@ -38,7 +38,17 @@ a:focus {
 ul.girdle,
 ul.girdle-medium {
   margin: 0 auto;
-  max-width: 83.6875rem;
+  max-width: 90%;
+}
+
+@media only screen and (min-width: 83.6875rem) {
+  .girdle,
+  .girdle-medium,
+  ul.girdle,
+  ul.girdle-medium {
+    margin: 0 auto;
+    max-width: 83.6875rem;
+  }
 }
 
 .girdle-medium,

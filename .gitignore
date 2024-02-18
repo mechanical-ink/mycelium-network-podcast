@@ -21,6 +21,8 @@ pnpm-debug.log*
 .DS_Store
 
 # IndieCaster
+demo/
+public/audio/
 public/episode-artwork/
 public/profile-images/
 public/android-chrome-192x192.png
