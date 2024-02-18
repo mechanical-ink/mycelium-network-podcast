@@ -74,12 +74,13 @@ const { colorPrimaryColorLight } = customProperties;
     flex-wrap: wrap;
     gap: var(--spacing-default);
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%;
     padding: 0;
   }
 
   @media only screen and (min-width: 47.9375rem) {
     .podcast-players {
-      margin: 0 auto;
       max-width: 37.5rem;
     }
   }
@@ -95,10 +96,6 @@ const { colorPrimaryColorLight } = customProperties;
       flex-wrap: nowrap;
       max-width: 83.6875rem;
     }
-  }
-
-  .podcast-player {
-    flex: 1 1 35%;
   }
 
   @media only screen and (min-width: 47.9375rem) {
