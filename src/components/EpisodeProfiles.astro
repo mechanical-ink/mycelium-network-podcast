@@ -2,48 +2,41 @@
 import CardPerson from "./CardPerson.astro";
 import Config from "virtual:indiecaster/config";
 
-const {
-  featuredEpisodeGuestName,
-  featuredEpisodeGuestProfilePicture,
-  hostName,
-  hostProfilePicture,
-  colorPrimaryColor,
-} = Config.options;
-
+const { colorPrimaryColor } = Config.options;
+const { frontMatter } = Astro.props;
 const featuredGuest = {
-  name: featuredEpisodeGuestName,
-  pictureSrc: `profile-images/${featuredEpisodeGuestProfilePicture}`,
-  type: "Guest",
+  name: frontMatter.guest,
+  pictureSrc: `/profile-images/${frontMatter.guestProfilePicture}`,
+  type: "guest",
 };
 const host = {
-  name: hostName,
-  pictureSrc: `profile-images/${hostProfilePicture}`,
-  type: "Host",
+  name: frontMatter.host,
+  pictureSrc: `/profile-images/${frontMatter.hostProfilePicture}`,
+  type: "host",
 };
 ---
 
-<div class="base-container-padding">
-  <ul class="reset-list featured-episode-profiles">
-    <li class="featured-episode-profile">
-      <CardPerson person={host}>
-        <h2 class="card-person-name" slot="card-person-name">{host.name}</h2>
-      </CardPerson>
-    </li>
-    <li class="featured-episode-profile">
-      <CardPerson person={featuredGuest}>
-        <h2 class="card-person-name" slot="card-person-name">
-          {featuredGuest.name}
-        </h2>
-      </CardPerson>
-    </li>
-  </ul>
-</div>
+<ul class="reset-list featured-episode-profiles">
+  <li class="featured-episode-profile">
+    <CardPerson person={host}>
+      <h2 class="card-person-name" slot="card-person-name">{host.name}</h2>
+    </CardPerson>
+  </li>
+  <li class="featured-episode-profile">
+    <CardPerson person={featuredGuest}>
+      <h2 class="card-person-name" slot="card-person-name">
+        {featuredGuest.name}
+      </h2>
+    </CardPerson>
+  </li>
+</ul>
 
 <style define:vars={{ colorPrimaryColor }}>
   .featured-episode-profiles {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-medium);
+    margin: var(--spacing-medium) 0;
     padding: 0;
   }
 
@@ -51,7 +44,6 @@ const host = {
     .featured-episode-profiles {
       flex-wrap: nowrap;
       gap: 0;
-      margin: 0 auto;
       max-width: 37.5rem;
     }
   }

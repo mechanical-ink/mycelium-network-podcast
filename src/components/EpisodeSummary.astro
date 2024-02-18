@@ -2,7 +2,7 @@
 import Config from "virtual:indiecaster/config";
 
 import ButtonPrimary from "./ButtonPrimary.astro";
-import EpisodeProfiles from "./EpisodeProfiles.astro";
+import EpisodeProfilesFeatured from "./EpisodeProfilesFeatured.astro";
 
 const { showCta } = Astro.props;
 const { featuredEpisodeTitle, featuredEpisodeSummary, featuredEpisodeURL } =
@@ -11,7 +11,7 @@ const { featuredEpisodeTitle, featuredEpisodeSummary, featuredEpisodeURL } =
 
 <article class="featured-episode-summary base-container-padding">
   <h2 class="featured-episode-summary-heading">{featuredEpisodeTitle}</h2>
-  <EpisodeProfiles />
+  <EpisodeProfilesFeatured />
   <p class="featured-episode-summary-text">{featuredEpisodeSummary}</p>
   {
     showCta && (
