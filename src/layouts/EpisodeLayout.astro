@@ -10,6 +10,7 @@ import DefaultHeroPlayer from "../components/DefaultHeroPlayer.astro";
 import MetaIcons from "../components/MetaIcons.astro";
 import OpenGraph from "../components/OpenGraph.astro";
 import Subscribe from "../components/Subscribe.astro";
+import ThemeProvider from "../components/ThemeProvider.astro";
 
 const { frontmatter } = Astro.props;
 const showAnnounceBar = import.meta.env.ANNOUNCEBAR_ENABLED === "true";
@@ -32,16 +33,18 @@ const episode = {
     <OpenGraph />
     <MetaIcons />
   </head>
-  <body>
-    {showAnnounceBar && <AnnounceBar />}
-    <Header />
-    <main class="girdle episode-content-container">
-      <DefaultHeroPlayer episode={episode} />
-      <h1>{title}</h1>
-      <EpisodeProfiles frontMatter={frontmatter} />
-      <slot />
-    </main>
-    <Subscribe />
-    <Footer />
+  <body class="episode-page">
+    <ThemeProvider>
+      {showAnnounceBar && <AnnounceBar />}
+      <Header />
+      <main class="girdle episode-content-container">
+        <DefaultHeroPlayer episode={episode} />
+        <h1>{title}</h1>
+        <EpisodeProfiles frontMatter={frontmatter} />
+        <slot />
+      </main>
+      <Subscribe />
+      <Footer />
+    </ThemeProvider>
   </body>
 </html>
