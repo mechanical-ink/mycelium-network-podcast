@@ -25,6 +25,20 @@ a:focus {
   }
 }
 
+.girdle.episode-content-container,
+.episode-content-container {
+  margin-bottom: var(--spacing-wide);
+}
+
+.episode-content-container ul,
+.episode-content-container ol {
+  margin: var(--spacing-default) 0;
+}
+
+.episode-content-container li {
+  margin-bottom: var(--spacing-narrow);
+}
+
 /* links marked with rel=external includes an icon, we therefore display these using the flex model */
 [rel="external"] {
   align-items: center;
