@@ -27,6 +27,16 @@ export const indieCasterConfig = {
   logo: "logo.svg",
   logoHeight: "275",
   logoWidth: "500",
+  mainNavigation: [
+    {
+      name: "Home",
+      url: "/",
+    },
+    {
+      name: "Episodes",
+      url: "/episodes",
+    },
+  ],
   metaDefaultDescription:
     "The Mycelium Network podcast. A podcast about early-stage web developers and the mentors, teachers, and communities who help them along the way.",
   metaLanguage: "en",
