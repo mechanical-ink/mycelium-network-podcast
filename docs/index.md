@@ -24,7 +24,7 @@ The name of the file will be the URL slug for the episode. For example, `src/pag
 
 ### The frontmatter
 
-The file should have the following frontmatter:
+The file should have the following frontmatter (meta data):
 
 ```markdown
 ---
@@ -86,6 +86,8 @@ Below are some resources to learn about creating the ultimate podcast artwork:
 The `episodeAudio` property is the filename of the episode audio. This should be an MP3 file and should be placed in the `public/audio` directory. The filename should not include the file extension. For example, if the episode audio is `promo.mp3`, the `episodeAudio` property should be `promo`.
 
 The `tags` property is an array of tags for the episode. These tags will be used to filter episodes on the relevant tag page.
+
+The `youtube` property is the YouTube video ID for the episode. This should be the ID from the URL of the video. For example, if the URL of the video is `https://www.youtube.com/watch?v=spL72oeLiVo`, the `youtube` property should be `spL72oeLiVo`. If not set, the YouTube video will not be displayed on the episode page.
 
 ### The content
 

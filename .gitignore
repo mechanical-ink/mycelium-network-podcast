@@ -39,5 +39,6 @@ public/safari-pinned-tab.svg
 public/site.webmanifest
 public/social-share.png
 public/social-share@2x.png
+src/pages/episodes/**/*
 indiecaster.config.js
 README.md
