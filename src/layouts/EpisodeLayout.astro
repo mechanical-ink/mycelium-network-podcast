@@ -11,11 +11,12 @@ import MetaIcons from "../components/MetaIcons.astro";
 import OpenGraph from "../components/OpenGraph.astro";
 import Subscribe from "../components/Subscribe.astro";
 import ThemeProvider from "../components/ThemeProvider.astro";
+import Youtube from "../components/Youtube.astro";
 
 const { frontmatter } = Astro.props;
 const showAnnounceBar = import.meta.env.ANNOUNCEBAR_ENABLED === "true";
 const { metaLanguage, podcastName } = Config.options;
-const { description, title } = frontmatter;
+const { description, title, youtube } = frontmatter;
 const episode = {
   artwork: frontmatter.episodeArtwork.src,
   url: frontmatter.episodeAudio,
@@ -41,6 +42,14 @@ const episode = {
         <DefaultHeroPlayer episode={episode} />
         <h1>{title}</h1>
         <EpisodeProfiles frontMatter={frontmatter} />
+        {
+          youtube && (
+            <Youtube
+              title="IndieCaster Promo - A Complete Website Toolkit For Indie Podcasters"
+              youtubeVideoId={youtube}
+            />
+          )
+        }
         <slot />
       </main>
       <Subscribe />
